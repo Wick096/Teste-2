@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Open+Sans|Dosis" >
+        <title>Bios</title> 
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="servico.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li> 
+            </ul>                      
+        </nav>
+
+        <div class="img_internas"></div>
+
+        <section>
+
+            <div class="container">
+
+                <h2>contato</h2>
+
+                    <form action="envia.php" method="post" target="_blank">
+
+                      <div class="info">
+
+                        <div class="info">
+                            <label for="contatoNome" style="margin-right: 6px;">Nome: </label>
+                            <input type="text" id="contatoNome" name="contatoNome" placeholder="Nome Completo" size="30">
+                        </div>
+
+                        <div class="info">
+                            <label for="contatoMail" style="margin-right: 11px;">Email: </label>
+                            <input type="email" id="contatoMail" name="contatoMail" placeholder="Email" size="30">
+                        </div>
+
+                        <div class="info">
+                            <label for="contatoCidade">Cidade: </label>
+                            <input type="text" id="contatoCidade" name="contatoCidade" placeholder="Cidade" size="30" required>
+                        </div>
+
+                        <div>
+                            <label for="contatoComentario">Envie sua mensagem:</label><br>
+                            <textarea id="contatoComentario" style="margin-top: 10px; margin-bottom: 10px;" class="form-control" name="contatoComentario" rows="10" cols="45"></textarea><br>
+                            <input type="submit" value="enviar">
+                            <input type="reset" value="apagar">
+                        </div>
+
+                      </div>
+
+                      <br>
+
+                      <br>
+
+                    </form>
+
+            </div> 
+
+        </section>
+        
+        <footer>
+            <p>Bios</p>
+        </footer>
+
+    </body>
+
+</html>
